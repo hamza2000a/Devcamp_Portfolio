@@ -1,7 +1,10 @@
-<div class="blog-header">
+<section class="jumbotron text-center">
   <div class="container">
-    <h1 class="blog-title">My Blog</h1>
-    <p class="lead blog-description">An example blog template built with Bootstrap.</p>
-    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <h1 class="jumbotron-heading">My Portfolio</h1>
+    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+    <p>
+      <%= link_to 'Find Out More About Me', about_me_path, class: 'btn btn-primary' %>
+      <%= link_to 'My Blog', blogs_path, class: 'btn btn-secondary' %>
+    </p>
   </div>
-</div>
+</section>
